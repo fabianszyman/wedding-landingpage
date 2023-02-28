@@ -14,7 +14,7 @@ const Navbar = () => {
           {/*<h1 className="text-2xl font-bold mr-4 sm:text-xl">Anne & Fabian</h1>*/}
           <HeartIcon className="w-8" />
           <h1 className="text-2xl font-bold mr-4 sm:text-xl">
-            <a href="#home">A & F</a>
+            <a>A & F</a>
           </h1>
           <ul className="hidden md:flex ">
             <li>
