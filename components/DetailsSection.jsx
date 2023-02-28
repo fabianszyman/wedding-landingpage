@@ -26,12 +26,6 @@ const DetailsSection = () => {
             height={500}
           />
         </div>
-        {/*<div id="headline" className="w-full pt-4 pb-12">
-          <h1 className="text-4xl font-CormorantGaramond_Medium">
-            Wann & Wo ?
-          </h1>
-        </div>
-    */}
         <div id="subtitle" className="w-full py-4 ">
           <h2 className="text-3xl font-RobotoCondensed_Regular">
             Wir wollen heiraten!
