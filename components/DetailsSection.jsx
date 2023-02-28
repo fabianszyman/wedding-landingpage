@@ -1,7 +1,7 @@
 import React from "react";
 import bg from "public/background.png";
 import Image from "next/image";
-import AnneUndFabianImage from "/Users/fabian/Coding/nextJS/wedding/wedding-landingpage/public/anneundfabian.png";
+import AnneUndFabianImage from "../public/anneundfabian.png";
 
 const DetailsSection = () => {
   return (
