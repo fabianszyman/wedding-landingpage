@@ -17,7 +17,7 @@ const AntwortSection = () => {
         id="contact-form"
         className="flex items-center justify-center flex-wrap px-4"
       >
-        <div id="subtitle" className="w-full py-4 ">
+        <div id="subtitle" className="w-full pt-24 ">
           <h2 className="text-3xl font-RobotoCondensed_Regular">
             Meine Antwort
           </h2>
