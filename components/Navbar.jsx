@@ -12,10 +12,11 @@ const Navbar = () => {
       >
         <div id="logo_nav_items" className="flex items-center">
           {/*<h1 className="text-2xl font-bold mr-4 sm:text-xl">Anne & Fabian</h1>*/}
-          <HeartIcon className="w-8" />
-          <h1 className="text-2xl font-bold mr-4 sm:text-xl">
-            <a>A & F</a>
-          </h1>
+          <a href="#home" className="flex">
+            <HeartIcon className="w-8" />
+            <h1 className="text-2xl font-bold mr-4 sm:text-xl">A & F</h1>
+          </a>
+
           <ul className="hidden md:flex ">
             <li>
               <a href="#home" className="hover:underline">
