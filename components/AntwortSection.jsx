@@ -11,7 +11,6 @@ const AntwortSection = () => {
         width: "100%",
         height: "100%",
       }}
-      className=" h-full "
     >
       <div
         id="contact-form"

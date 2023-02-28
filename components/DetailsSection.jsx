@@ -33,8 +33,19 @@ const DetailsSection = () => {
         </div>
         <div id="subtitle" className="w-full">
           <h2 className="text-2xl font-RobotoCondensed_Regular">
-            Dies wollen wir mit euch am 3. August 2024 in der Orangerie -
-            Schloss Bekond bei Trier feiern.
+            Dies wollen wir mit euch am 3. August 2024 in der{" "}
+            <a
+              className="underline"
+              href="https://www.orangerie-schloss-bekond.de/"
+            >
+              Orangerie - Schloss Bekond bei Trier
+            </a>{" "}
+            feiern.
+          </h2>
+        </div>
+        <div id="further_infos" className="w-full py-4">
+          <h2 className="text-xl font-RobotoCondensed_Regular">
+            weitere Informationen folgen...
           </h2>
         </div>
       </div>

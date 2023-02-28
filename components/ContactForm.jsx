@@ -1,9 +1,17 @@
 import React from "react";
+import bg from "public/background.png";
 
 const ContactForm = () => {
   return (
-    <form className="px-4 pt-6 h-screen ">
-      <div className="grid gap-6 mb-6 md:grid-cols-2">
+    <form
+      className="px-4 pt-6 h-screen"
+      style={{
+        backgroundImage: `url(${bg.src})`,
+        width: "100%",
+        height: "100%",
+      }}
+    >
+      <div className="grid gap-6 mb-4 md:grid-cols-2">
         <div>
           <label for="first_name" class="block mb-2 text-md font-medium ">
             Name
@@ -89,9 +97,9 @@ const ContactForm = () => {
 */}
       <button
         type="submit"
-        className="text-white bg-darkgreen hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-lg w-full sm:w-auto px-5 py-4 mt-6 text-center"
+        className="text-white bg-darkgreen hover:bg-gray-400 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-lg w-full sm:w-auto px-5 py-4 mt-6 text-center"
       >
-        Senden
+        SENDEN
       </button>
     </form>
   );
