@@ -17,7 +17,7 @@ const Navbar = () => {
             <h1 className="text-2xl font-bold mr-4 sm:text-xl">A & F</h1>
           </a>
 
-          <ul className="hidden md:flex ">
+          <ul className="hidden md:flex text-xl gap-12 px-4">
             <li>
               <a href="#home" className="hover:underline">
                 Home
