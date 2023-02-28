@@ -40,15 +40,22 @@ const Navbar = () => {
         </div>
       </div>
       <ul className={!nav ? "hidden" : "absolute w-full px-8 bg-weddingYellow"}>
-        <li className="w-full py-6 text-xl" onClick={handleClick}>
-          <a href="#home">Home</a>
-        </li>
-        <li className="w-full py-6 text-xl" onClick={handleClick}>
-          <a href="#wann_und_wo_section">Wann & Wo</a>
-        </li>
-        <li className="w-full py-6 text-xl" onClick={handleClick}>
-          <a href="#antwort_section">Meine Antwort</a>
-        </li>
+        <a href="#home">
+          <li className="w-full py-6 text-xl" onClick={handleClick}>
+            Home
+          </li>
+        </a>
+        <a href="#wann_und_wo_section">
+          <li className="w-full py-6 text-xl" onClick={handleClick}>
+            Wann & Wo
+          </li>
+        </a>
+
+        <a href="#antwort_section">
+          <li className="w-full py-6 text-xl" onClick={handleClick}>
+            Meine Antwort
+          </li>
+        </a>
       </ul>
     </div>
   );
