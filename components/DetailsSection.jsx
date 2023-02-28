@@ -26,16 +26,16 @@ const DetailsSection = () => {
             height={500}
           />
         </div>
-        <div id="subtitle" className="w-full py-4 ">
+        <div id="subtitle" className="w-full py-6 ">
           <h2 className="text-3xl font-RobotoCondensed_Regular">
-            Wir wollen heiraten!
+            Wir heiraten!
           </h2>
         </div>
         <div id="subtitle" className="w-full">
           <h2 className="text-2xl font-RobotoCondensed_Regular">
-            Dies wollen wir mit euch am 3. August 2024 in der{" "}
+            Dies wollen wir mit euch am <b>03. August 2024 </b> in der{" "}
             <a
-              className="underline"
+              className="underline font-bold"
               href="https://www.orangerie-schloss-bekond.de/"
             >
               Orangerie - Schloss Bekond bei Trier
@@ -43,7 +43,7 @@ const DetailsSection = () => {
             feiern.
           </h2>
         </div>
-        <div id="further_infos" className="w-full py-4">
+        <div id="further_infos" className="w-full py-12">
           <h2 className="text-xl font-RobotoCondensed_Regular">
             weitere Informationen folgen...
           </h2>

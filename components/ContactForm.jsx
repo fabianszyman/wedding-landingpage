@@ -13,7 +13,10 @@ const ContactForm = () => {
     >
       <div className="grid gap-6 mb-4 md:grid-cols-2">
         <div>
-          <label for="first_name" class="block mb-2 text-md font-medium ">
+          <label
+            htmlFor="first_name"
+            className="block mb-2 text-md font-medium "
+          >
             Name
           </label>
           <input
@@ -26,7 +29,7 @@ const ContactForm = () => {
         </div>
 
         <div>
-          <label for="phone" class="block mb-2 text-md font-medium ">
+          <label htmlFor="phone" className="block mb-2 text-md font-medium ">
             Telefon
           </label>
           <input
@@ -40,7 +43,7 @@ const ContactForm = () => {
         </div>
       </div>
       <div className="mb-12">
-        <label for="email" class="block mb-2 text-md font-medium ">
+        <label htmlFor="email" className="block mb-2 text-md font-medium ">
           E-Mail
         </label>
         <input
@@ -60,7 +63,7 @@ const ContactForm = () => {
           name="default-radio"
           className="w-8 h-8 text-darkgreen bg-gray-100 border-gray-300 focus:ring-darkgreen  focus:ring-2 "
         ></input>
-        <label for="default-radio-1" className="ml-2 text-lg font-medium">
+        <label htmlFor="default-radio-1" className="ml-2 text-lg font-medium">
           Ja, ich werde kommen
         </label>
       </div>
@@ -73,7 +76,7 @@ const ContactForm = () => {
           name="default-radio"
           className="w-8 h-8 text-darkgreen bg-gray-100 border-gray-300 focus:ring-darkgreen  focus:ring-2 "
         ></input>
-        <label for="default-radio-2" className="ml-2 text-lg font-medium">
+        <label htmlFor="default-radio-2" className="ml-2 text-lg font-medium">
           Ich kann leider nicht kommen
         </label>
       </div>
