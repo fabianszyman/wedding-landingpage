@@ -21,9 +21,9 @@ export default function Home() {
         />
         <link rel="icon" href="/heart.svg" />
       </Head>
-      <Navbar />
 
-      <main className="h-screen scroll-smooth text-darkgreen">
+      <main className="h-screen text-darkgreen">
+        <Navbar />
         <Hero />
         <DetailsSection />
         <AntwortSection />

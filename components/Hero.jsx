@@ -4,6 +4,7 @@ import bg from "public/background.png";
 const Hero = () => {
   return (
     <section
+      name="home"
       id="home"
       style={{
         backgroundImage: `url(${bg.src})`,

@@ -38,9 +38,9 @@ const DetailsSection = () => {
               className="underline font-bold"
               href="https://www.orangerie-schloss-bekond.de/"
             >
-              Orangerie - Schloss Bekond bei Trier
+              Orangerie - Schloss Bekond
             </a>{" "}
-            feiern.
+            bei Trier feiern.
           </h2>
         </div>
         <div id="further_infos" className="w-full py-12">
