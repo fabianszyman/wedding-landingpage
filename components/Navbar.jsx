@@ -5,7 +5,7 @@ const Navbar = () => {
   const [nav, setNav] = useState(false);
   const handleClick = () => setNav(!nav);
   return (
-    <div className=" w-screen h-[80px] text-darkgreen fixed top-0 z-50 scroll-smooth">
+    <div className=" w-screen h-[80px] text-darkgreen fixed top-0 z-50 scroll-smooth shadow-md">
       <div
         id="nav_container"
         className="px-6 flex justify-between items-center w-full h-full bg-weddingYellow"
@@ -40,7 +40,11 @@ const Navbar = () => {
           {!nav ? <MenuIcon className="w-8" /> : <XIcon className="w-8" />}
         </div>
       </div>
-      <ul className={!nav ? "hidden" : "absolute w-full px-8 bg-weddingYellow"}>
+      <ul
+        className={
+          !nav ? "hidden" : "absolute w-full px-8 bg-weddingYellow shadow-md"
+        }
+      >
         <a href="#home">
           <li className="w-full py-6 text-xl" onClick={handleClick}>
             Home
