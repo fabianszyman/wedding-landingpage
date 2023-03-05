@@ -31,6 +31,8 @@ module.exports = {
         Caveat: "Caveat",
         CormorantGaramond_Bold: "CormorantGaramond_Bold",
         CormorantGaramond_Medium: "CormorantGaramond-Medium",
+        Quicksand_Regular: "Quicksand-Regular",
+        Quicksand_Medium: "Quicksand-Medium",
       },
     },
   },

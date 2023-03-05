@@ -134,6 +134,17 @@ a {
 }
 
 @font-face {
-  font-family: "CormorantGaramond_Bold";
+  font-family: "CormorantGaramond_Medium";
   src: url("../public/CormorantGaramond-Medium.ttf") 
 }
+
+@font-face {
+  font-family: "Quicksand_Regular";
+  src: url("../public/Quicksand-Regular.ttf") 
+}
+
+@font-face {
+  font-family: "Quicksand_Medium";
+  src: url("../public/Quicksand-Medium.ttf") 
+}
+

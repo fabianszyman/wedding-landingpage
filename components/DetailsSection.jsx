@@ -12,7 +12,7 @@ const DetailsSection = () => {
         width: "100%",
         height: "100%",
       }}
-      className="text-darkgreen"
+      className="text-darkgreen font-Quicksand_Regular"
     >
       <div
         id="wann_und_wo_section"
@@ -27,12 +27,10 @@ const DetailsSection = () => {
           />
         </div>
         <div id="subtitle" className="w-full py-6 ">
-          <h2 className="text-3xl font-RobotoCondensed_Regular">
-            Wir heiraten!
-          </h2>
+          <h2 className="text-3xl ">Wir heiraten!</h2>
         </div>
         <div id="subtitle" className="w-full">
-          <h2 className="text-2xl font-RobotoCondensed_Regular">
+          <h2 className="text-2xl ">
             Dies wollen wir mit euch am <b>03. August 2024 </b> in der{" "}
             <a
               className="underline font-bold"
@@ -44,9 +42,7 @@ const DetailsSection = () => {
           </h2>
         </div>
         <div id="further_infos" className="w-full py-12">
-          <h2 className="text-xl font-RobotoCondensed_Regular">
-            weitere Informationen folgen...
-          </h2>
+          <h2 className="text-xl ">weitere Informationen folgen...</h2>
         </div>
       </div>
     </section>

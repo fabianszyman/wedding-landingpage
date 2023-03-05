@@ -4,14 +4,14 @@ import bg from "public/background.png";
 const ContactForm = () => {
   return (
     <form
-      className="px-4 pt-6 h-screen"
+      className="px-4 pt-6 h-screen font-Quicksand_Regular"
       style={{
         backgroundImage: `url(${bg.src})`,
         width: "100%",
         height: "100%",
       }}
     >
-      <div className="grid gap-6 mb-4 md:grid-cols-2">
+      <div className="grid gap-5 mb-4 md:grid-cols-2">
         <div>
           <label
             htmlFor="first_name"
@@ -54,7 +54,7 @@ const ContactForm = () => {
           required
         ></input>
       </div>
-      <div className="flex items-center mb-8">
+      <div className="flex items-center mb-6">
         <input
           required
           id="default-radio-1"
@@ -67,7 +67,7 @@ const ContactForm = () => {
           Ja, ich werde kommen
         </label>
       </div>
-      <div className="flex items-center mb-8">
+      <div className="flex items-center mb-6">
         <input
           required
           id="default-radio-2"
