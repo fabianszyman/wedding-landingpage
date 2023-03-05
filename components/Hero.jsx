@@ -1,6 +1,5 @@
 import React from "react";
 import bg from "public/background.png";
-import { red } from "@mui/material/colors";
 
 const Hero = () => {
   return (
