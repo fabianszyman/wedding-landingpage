@@ -142,3 +142,8 @@ a {
   src: url("../public/Quicksand-Medium.ttf") 
 }
 
+@font-face {
+  font-family: "RubikIso_Regular";
+  src: url("../public/RubikIso-Regular.ttf") 
+}
+

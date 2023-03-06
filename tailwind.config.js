@@ -33,6 +33,7 @@ module.exports = {
         CormorantGaramond_Medium: "CormorantGaramond_Medium",
         Quicksand_Regular: "Quicksand_Regular",
         Quicksand_Medium: "Quicksand_Medium",
+        RubikIso_Regular: "RubikIso_Regular",
       },
     },
   },
