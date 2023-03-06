@@ -11,14 +11,14 @@ const Hero = () => {
         width: "100%",
         height: "100%",
       }}
-      className="text-darkgreen"
+      className="text-darkgreen font-Quicksand_Regular"
     >
       <div
         id="hero_container"
         className="flex items-center justify-center flex-wrap text-center pt-48 md:pt-96"
       >
         <div id="headline" className="w-full pb-12">
-          <h1 className="text-4xl md:text-6xl tracking-widest">
+          <h1 className="text-4xl md:text-6xl tracking-widest font-Caveat">
             SAVE THE DATE
           </h1>
         </div>

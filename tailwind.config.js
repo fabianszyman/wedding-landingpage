@@ -27,7 +27,6 @@ module.exports = {
         darkgreen: "#324448",
       },
       fontFamily: {
-        sans: ["var(--font-quicksand)"],
         RobotoCondensed_Regular: "RobotoCondensed-Regular",
         Caveat: "Caveat",
         CormorantGaramond_Bold: "CormorantGaramond_Bold",
