@@ -112,12 +112,6 @@ a {
   }
 }
 
-@layer base {
-  li {
-    @apply p-4
-  }
-}
-
 @font-face {
   font-family: "RobotoCondensed-Regular";
   src: url("../public/RobotoCondensed-Regular.ttf") 
