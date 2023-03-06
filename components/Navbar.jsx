@@ -5,7 +5,7 @@ const Navbar = () => {
   const [nav, setNav] = useState(false);
   const handleClick = () => setNav(!nav);
   return (
-    <div className=" w-screen h-[80px] text-darkgreen fixed top-0 z-50 scroll-smooth shadow-md">
+    <div className=" w-screen h-[80px] text-darkgreen fixed top-0 z-50 scroll-smooth shadow-md font-Quicksand_Regular">
       <div
         id="nav_container"
         className="px-6 flex justify-between items-center w-full h-full bg-weddingYellow"

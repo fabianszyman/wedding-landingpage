@@ -12,7 +12,7 @@ const DetailsSection = () => {
         width: "100%",
         height: "100%",
       }}
-      className="text-darkgreen font-Quicksand_Regular"
+      className="text-darkgreen font-Quicksand_Regular tracking-wider"
     >
       <div
         id="wann_und_wo_section"

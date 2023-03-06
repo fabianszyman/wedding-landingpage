@@ -11,14 +11,14 @@ const Hero = () => {
         width: "100%",
         height: "100%",
       }}
-      className="text-darkgreen font-Quicksand_Regular"
+      className="text-darkgreen font-Quicksand_Regular tracking-wider"
     >
       <div
         id="hero_container"
         className="flex items-center justify-center flex-wrap text-center pt-48 md:pt-96"
       >
         <div id="headline" className="w-full pb-12">
-          <h1 className="text-4xl md:text-6xl tracking-widest font-CormorantGaramond_Medium">
+          <h1 className="text-5xl md:text-7xl tracking-widest font-CormorantGaramond_Medium md:font-CormorantGaramond_Bold">
             SAVE THE DATE
           </h1>
         </div>
@@ -26,7 +26,7 @@ const Hero = () => {
           <h2 className=" text-4xl md:text-5xl ">Anne und Fabian</h2>
         </div>
         <div id="subline_date" className="w-full">
-          <h2 className=" text-3xl md:text-4xl font-bold ">03.08.2024</h2>
+          <h2 className=" text-3xl md:text-4xl ">03.08.2024</h2>
         </div>
         <div id="button_container" className="pt-12">
           <button className="rounded-lg text-xl px-6 py-3 text-white bg-darkgreen hover:bg-teal-900 duration-300 shadow-lg shadow-gray-400">

@@ -4,14 +4,14 @@ import bg from "public/background.png";
 const ContactForm = () => {
   return (
     <form
-      className="px-4 pt-6 h-screen font-Quicksand_Regular"
+      className="px-4 pt-6 h-screen font-Quicksand_Regular tracking-wider"
       style={{
         backgroundImage: `url(${bg.src})`,
         width: "100%",
         height: "100%",
       }}
     >
-      <div className="grid gap-5 mb-4 md:grid-cols-2">
+      <div className="grid gap-4 mb-2 md:grid-cols-2">
         <div>
           <label
             htmlFor="first_name"
@@ -42,7 +42,7 @@ const ContactForm = () => {
           ></input>
         </div>
       </div>
-      <div className="mb-12">
+      <div className="mb-6">
         <label htmlFor="email" className="block mb-2 text-md font-medium ">
           E-Mail
         </label>
