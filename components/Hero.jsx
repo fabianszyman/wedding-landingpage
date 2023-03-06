@@ -18,7 +18,7 @@ const Hero = () => {
         className="flex items-center justify-center flex-wrap text-center pt-48 md:pt-96"
       >
         <div id="headline" className="w-full pb-12">
-          <h1 className="text-4xl md:text-6xl tracking-widest font-Caveat">
+          <h1 className="text-4xl md:text-6xl tracking-widest font-CormorantGaramond_Medium">
             SAVE THE DATE
           </h1>
         </div>
