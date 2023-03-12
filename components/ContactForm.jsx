@@ -2,8 +2,47 @@ import React from "react";
 import bg from "public/background.png";
 
 const ContactForm = () => {
+  // Handles the submit event on form submit.
+  const handleSubmit = async (event) => {
+    // Stop the form from submitting and refreshing the page.
+    event.preventDefault();
+
+    // Get data from the form.
+    const data = {
+      first: event.target.first.value,
+      email: event.target.email.value,
+      phone: event.target.phone.value,
+    };
+
+    // Send the data to the server in JSON format.
+    const JSONdata = JSON.stringify(data);
+
+    // API endpoint where we send form data.
+    const endpoint = "/api/form";
+
+    // Form the request for sending data to the server.
+    const options = {
+      // The method is POST because we are sending data.
+      method: "POST",
+      // Tell the server we're sending JSON.
+      headers: {
+        "Content-Type": "application/json",
+      },
+      // Body of the request is the JSON data we created above.
+      body: JSONdata,
+    };
+
+    // Send the form data to our forms API on Vercel and get a response.
+    const response = await fetch(endpoint, options);
+
+    // Get the response data from server as JSON.
+    // If server returns the name submitted, that means the form works.
+    const result = await response.json();
+    alert(`Daten erfolgreich übermittelt: ${result.data}`);
+  };
   return (
     <form
+      onSubmit={handleSubmit}
       className="px-4 pt-6 h-screen font-Quicksand_Regular tracking-wider"
       style={{
         backgroundImage: `url(${bg.src})`,
@@ -21,7 +60,8 @@ const ContactForm = () => {
           </label>
           <input
             type="text"
-            id="first_name"
+            id="first"
+            name="first"
             className="bg-gray-50 border border-gray-300  text-lg rounded-lg focus:ring-darkgreen focus:border-darkgreen block w-full p-2.5  dark:border-gray-600 dark:placeholder-gray-400 "
             placeholder="Max Mustermann"
             required
@@ -35,6 +75,7 @@ const ContactForm = () => {
           <input
             type="tel"
             id="phone"
+            name="phone"
             className="bg-gray-50 border border-gray-300  text-lg rounded-lg focus:ring-darkgreen focus:border-darkgreen block w-full p-2.5  dark:border-gray-600 dark:placeholder-gray-400 "
             placeholder="0157-3292929"
             //pattern="[0-9]{3}-[0-9]{3}"
@@ -49,6 +90,7 @@ const ContactForm = () => {
         <input
           type="email"
           id="email"
+          name="email"
           className="bg-gray-50 border border-gray-300  text-lg rounded-lg focus:ring-darkgreen focus:border-darkgreen block w-full p-2.5  dark:border-gray-600 dark:placeholder-gray-400 "
           placeholder="max.mustermann@gmail.com"
           required
@@ -80,24 +122,6 @@ const ContactForm = () => {
           Ich kann leider nicht kommen
         </label>
       </div>
-      {/*
-      <div className="flex items-center">
-        <input
-          checked
-          id="default-radio-2"
-          type="radio"
-          value=""
-          name="default-radio"
-          class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
-        ></input>
-        <label
-          for="default-radio-2"
-          class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
-        >
-          Checked state
-        </label>
-      </div>
-*/}
       <button
         type="submit"
         className="text-white bg-darkgreen hover:bg-gray-400 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-lg w-full sm:w-auto px-5 py-4 mt-6 text-center"
