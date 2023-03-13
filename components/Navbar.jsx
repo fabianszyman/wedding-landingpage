@@ -5,19 +5,19 @@ const Navbar = () => {
   const [nav, setNav] = useState(false);
   const handleClick = () => setNav(!nav);
   return (
-    <div className=" w-screen h-[80px] text-darkgreen fixed top-0 z-50 scroll-smooth shadow-md font-Quicksand_Regular">
+    <div className=" w-screen md:grid md:place-items-center h-[80px] text-darkgreen fixed top-0 z-50 scroll-smooth shadow-md font-Quicksand_Regular bg-weddingYellow">
       <div
         id="nav_container"
-        className="px-6 flex justify-between items-center w-full h-full bg-weddingYellow"
+        className=" relative px-6 flex items-center w-full max-w-7xl h-full  overflow-auto"
       >
-        <div id="logo_nav_items" className="flex items-center">
+        <div id="logo_nav_items" className="float-left flex">
           {/*<h1 className="text-2xl font-bold mr-4 sm:text-xl">Anne & Fabian</h1>*/}
           <a href="#home" className="flex">
             <HeartIcon className="w-8" />
             <h1 className="text-2xl font-bold mr-4 sm:text-xl">A & F</h1>
           </a>
 
-          <ul className="hidden md:flex text-xl gap-12 px-4">
+          <ul className="hidden md:right-2 md:absolute text-xl gap-12 md:w-full md:max-w-md px-4 md:flex">
             <li>
               <a href="#home" className="hover:underline">
                 Home
@@ -36,7 +36,7 @@ const Navbar = () => {
           </ul>
         </div>
 
-        <div className="md:hidden" onClick={handleClick}>
+        <div className="md:hidden absolute right-6" onClick={handleClick}>
           {!nav ? <MenuIcon className="w-8" /> : <XIcon className="w-8" />}
         </div>
       </div>
